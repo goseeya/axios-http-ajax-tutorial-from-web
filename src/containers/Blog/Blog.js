@@ -42,7 +42,7 @@ class Blog extends Component {
     render () {
       let posts = <p style={{textAlign: 'center'}}>Something went wrong!</p>;
       if (!this.state.error) {
-        const posts = this.state.posts.map(post => {
+        posts = this.state.posts.map(post => {
           return <Post
               key={post.id}
               title={post.title}
